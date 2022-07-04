@@ -1,0 +1,23 @@
+import pandas as pd
+from datetime import date
+data = pd.read_csv('Csv File Path')
+today = str(date.today())
+staff = {'Dani':"225522",'Jon':'662266','Sam':'78826')
+count = 0
+for index,date in enumerate(data.date):
+  if date == today:
+    count +=1
+if count != 1:
+  print("Dates are not set Properly")
+else:
+  for index,date in enumerate(data.date):
+    try:
+      if date == today:
+        name = data.name[index]
+    except:
+      print(f"Error {str[e]}")
+for member in staff:
+  if name == memeber:
+    shiftmananger = (staff[member])
+
+print(shiftmanager)
